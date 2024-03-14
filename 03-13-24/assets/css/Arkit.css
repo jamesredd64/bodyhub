@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'Arkit';
+	src: url(../../assets/fonts/Arkit-Bomb.woff2) format('woff2'),
+	url(../../assets/fonts/Arkit-Bomb.woff) format('woff');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
