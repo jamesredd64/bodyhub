@@ -3,7 +3,7 @@
 <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/popper.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/main.js"></script><meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"><title>BodyHub.Shop</title><meta name="twitter:title" content="BodyHub.Shop"><meta property="og:image" content="https://bodyhub.shop/assets/img/bodyhub-logo.webp"><meta property="og:type" content="website"><meta property="og:description" content="Bodyhub.shop health site"><meta name="description" content="Experience holistic wellness at BodyHub.Shop, your destination for premium health and wellness products. Explore our curated selection, featuring supplements, self-care essentials, and insightful content on all things health-related. Nurture your body, mind, and soul for a vibrant, balanced lifestyle."><meta name="twitter:image" content="https://bodyhub.shop/assets/img/bodyhub-logo.webp"><link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css?h=2aa6e38b4ec20b4a0d69ec1e2e93f283"><link rel="stylesheet" href="/assets/css/styles.min.css?h=a573d2b2f0182bbaeb90be52096b7fe8"></head><body>
+  <script src="assets/js/main.js"></script><meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"><title>BodyHub.Shop</title><meta name="twitter:title" content="BodyHub.Shop"><meta property="og:image" content="https://bodyhub.shop/assets/img/bodyhub-logo.webp"><meta property="og:type" content="website"><meta property="og:description" content="Bodyhub.shop health site"><meta name="description" content="Experience holistic wellness at BodyHub.Shop, your destination for premium health and wellness products. Explore our curated selection, featuring supplements, self-care essentials, and insightful content on all things health-related. Nurture your body, mind, and soul for a vibrant, balanced lifestyle."><meta name="twitter:image" content="https://bodyhub.shop/assets/img/bodyhub-logo.webp"><link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css?h=2aa6e38b4ec20b4a0d69ec1e2e93f283"><link rel="stylesheet" href="/assets/css/styles.min.css?h=9d512b54a391d80a83dd54980547c851"></head><body>
     <style>
         .nav-link.active {
             /* Remove the color property to prevent link text color change */
@@ -23,11 +23,11 @@
 
         if (filename === "") {
             // Set the 'active' class for the "index" menu link in production
-            $('nav a[href="index"]').closest('.nav-item').addClass('active');
-            console.log('Active menu item set to: index in production');
+            $('nav a[href="/"]').closest('.nav-item').addClass('active');
+            console.log('Active menu item set to: / in production');
         } else {
-            // Remove the 'active' class from the "index" menu link
-            $('nav a[href="index"]').closest('.nav-item').removeClass('active');
+            // Remove the 'active' class from the "/" menu link
+            $('nav a[href="/"]').closest('.nav-item').removeClass('active');
 
             // Check if the filename has a ".html" extension
             if (filename.includes('.html')) {
@@ -36,8 +36,8 @@
                 console.log('Active menu item set to: ' + filename);
             } else {
                 // Set the 'active' class for the filename without .html extension
-                $('nav a[href="' + filename + '.html"]').closest('.nav-item').addClass('active');
-                console.log('Active menu item set to: ' + filename + '.html');
+                $('nav a[href="' + filename + '"]').closest('.nav-item').addClass('active');
+                console.log('Active menu item set to: ' + filename);
             }
         }
     });
